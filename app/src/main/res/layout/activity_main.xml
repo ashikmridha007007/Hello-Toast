@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/paddingon"
+    android:paddingBottom="@dimen/paddingon"
+    android:paddingRight="@dimen/paddingon"
+    android:paddingLeft="@dimen/paddingon"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:onClick="show_toast"
+        android:text="Toast"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+
+        android:textColor="#27fff8"
+        android:background="#f5ff40"
+        android:textSize="160sp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:id="@+id/show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        tools:ignore="HardcodedText,InefficientWeight" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:onClick="countup"
+        android:text="Count"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
